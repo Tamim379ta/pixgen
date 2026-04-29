@@ -29,10 +29,11 @@ const ImageCard = ({ photo }) => {
         <p className='flex items-center gap-2 text-xl'> <MdOutlineFileDownload />
           {photo.downloads}</p>
       </div>
-
-      <Button variant="outline" className={'w-full'}>
-        <Link href={'/'}>View</Link>
-      </Button>
+      <Link href={`/all-photos/${photo.id}`}>
+        <Button variant="outline" className={'w-full'}>
+          View
+        </Button>
+      </Link>
     </div>
   );
 };

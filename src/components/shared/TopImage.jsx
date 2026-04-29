@@ -12,7 +12,7 @@ const TopImage = async () => {
   return (
     <>
     <h1 className='mt-5 font-bold text-2xl'>Top Images</h1>
-      <div className='grid grid-cols-4 mt-5 gap-10'>
+      <div className='grid grid-cols-4 mt-5 gap-5'>
         {
           photos.map(photo => <ImageCard key={photo.id} photo={photo} />)
         }
